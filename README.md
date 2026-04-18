@@ -22,15 +22,6 @@ Five columns stayed in the notebook.
 
 Rows with no salary were removed. Rows missing `WorkExp`, `EdLevel`, or `LearnCodeChoose` were removed too. Blank `LearnCode` became the text `Unknown`. Salary outliers were cut with the usual IQR fences on `ConvertedCompYearly` (1.5 times the IQR past Q1 and Q3). That went from 23422 rows to 22122. The cleaned table is `data/cleaned_developer_survey.csv`.
 
-## Files the notebook writes
-
-Run the cells in order and these show up under `data/`:
-
-* `cleaned_developer_survey.csv` - cleaned rows.
-* `results_experience_salary.csv` - counts, mean, median pay by year of `WorkExp`.
-* `results_education_salary.csv` - same by `EdLevel`.
-* `results_learningchoice_salary.csv` - same by `LearnCodeChoose`.
-
 Big raw files from Kaggle are listed in `.gitignore` so they do not land in git. `data/readme.md` links the Kaggle page.
 
 ## What showed up in the numbers
@@ -39,19 +30,19 @@ All of this is from the summary CSVs after cleaning down to 22122 rows. The surv
 
 Pay goes up a lot over the first ten years of `WorkExp`. Two example medians from the table: about 20342 USD after one year, about 79261 USD after ten years. After that the rise is smaller and the very high year values rest on fewer answers each.
 
-![Salary vs work experience](figures/salary_vs_experience.png)
+<img width="1440" height="600" alt="salary_vs_experience" src="https://github.com/user-attachments/assets/2deb11d1-a41b-465b-9f45-a39a5e18c687" />
 
 Median pay is highest for people who picked a professional degree (about 83531 USD in the export). It is lower for master’s, then bachelor’s, associate, some college, and lower again for secondary and primary answers.
 
-![Median salary by education](figures/salary_by_education.png)
+<img width="1440" height="720" alt="salary_by_education" src="https://github.com/user-attachments/assets/845dffe7-0c20-44d3-aaae-4cf3fb1cee28" />
 
 For `LearnCodeChoose`, the group that said they are not new to coding and are not learning new languages or techniques right now has the highest median here (about 81870 USD). The group that is experienced but still learning sits around 69609 USD median. The small group that said they are new or still a student is much lower (about 10000 USD median).
 
-![Median salary by learning choice](figures/salary_by_learning_choice.png)
+<img width="1440" height="720" alt="salary_by_learning_choice" src="https://github.com/user-attachments/assets/019c1390-d015-4322-b769-160e2795975b" />
 
 Median pay by years of experience, split by whether `LearnCode` mentions online courses or certification (same check as in the notebook):
 
-![Median salary by experience and certification-style learning](figures/salary_cert_learning_vs_experience.png)
+<img width="1440" height="600" alt="salary_cert_learning_vs_experience" src="https://github.com/user-attachments/assets/f8a46206-980b-45e1-af2a-96826fddb51d" />
 
 Experience and education show the steadiest step pattern in these tables. The learning field is a rough self label, not the same thing as counting certificates.
 
