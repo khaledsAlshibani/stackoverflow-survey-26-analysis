@@ -1,0 +1,19 @@
+# Virtual environments (recreate with python3 -m venv ds-env)
+ds-env/
+venv/
+.venv/
+
+# Jupyter autosave copies of notebooks
+.ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Survey data from Kaggle
+data/*.csv
+data/*.pdf

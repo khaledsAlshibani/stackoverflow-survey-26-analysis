@@ -1,0 +1,1 @@
+The dataset is the Stack Overflow annual developer survey on Kaggle: [dataset on Kaggle](https://www.kaggle.com/datasets/edoardogalli/stack-overflow-annual-developer-survey-2025?resource=download).
